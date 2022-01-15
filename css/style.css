@@ -51,6 +51,7 @@ header {
   width: 23px;
   height: 23px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .Header-Search {
@@ -64,6 +65,7 @@ header {
   font-weight: 300;
   color: white;
   display: none;
+  cursor: pointer;
 }
 
 #Content {
@@ -242,6 +244,7 @@ header {
   background: white;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .Number {
@@ -286,6 +289,12 @@ header {
   color: white;
   font-size: 18px;
   text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.Form-zakaz-knopka:hover {
+  background: #18e08d;
 }
 
 #Content2 {
@@ -461,7 +470,7 @@ header {
   height: 25px;
   -webkit-transform: translate(-2em, -1px);
           transform: translate(-2em, -1px);
-  background: url("../img/Group 21.png") no-repeat 50% 50%/cover;
+  background: url("../img/Group 22.png") no-repeat 50% 50%/cover;
 }
 
 .Nomer3::after {
@@ -473,7 +482,7 @@ header {
   height: 25px;
   -webkit-transform: translate(-2em, -1px);
           transform: translate(-2em, -1px);
-  background: url("../img/Group 21.png") no-repeat 50% 50%/cover;
+  background: url("../img/Group 23.png") no-repeat 50% 50%/cover;
 }
 
 .Nomer4::after {
@@ -485,7 +494,7 @@ header {
   height: 25px;
   -webkit-transform: translate(-2em, -1px);
           transform: translate(-2em, -1px);
-  background: url("../img/Group 21.png") no-repeat 50% 50%/cover;
+  background: url("../img/Group 24.png") no-repeat 50% 50%/cover;
 }
 
 .Content4-Product {
@@ -750,6 +759,11 @@ header {
     width: 100%;
   }
 
+  #Content2, #Content3, #Content4, #Content5 {
+    width: 100%;
+    margin: 20px;
+  }
+
   .Content-block-lenta {
     width: 17em;
     margin: 0px;
@@ -792,18 +806,36 @@ header {
   .Conteiner-blocks, .Conteiner-blocks2 {
     width: 100%;
     text-align: left;
+    margin: 20px;
   }
 
-  .Content-blocks-spisok, .product-coll, .Form-zakaz {
-    margin: 0 auto;
+  .Content-blocks-spisok {
+    margin: 0px;
+    padding: 0px 25px;
+  }
+
+  .Conteiner-blocks2 ul li {
+    margin-bottom: 20px;
   }
 
   .pay {
-    margin: 20px;
+    margin: 20px 0px;
   }
 
   .Form-zakaz input {
     width: 100%;
+  }
+
+  .product-coll {
+    margin: 20px;
+  }
+
+  .Form-zakaz {
+    width: 100%;
+  }
+
+  .Content-product h6 {
+    margin: 20px 0px;
   }
 
   .Contant2-gallery {
@@ -822,12 +854,20 @@ header {
   }
 
   .Contant2-img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 49%;
   }
 
   .Content3-block-img {
     width: 100%;
+  }
+
+  .Content4-container ul {
+    margin: 25px 0px;
+  }
+
+  .Content4-container ul li {
+    margin-bottom: 20px;
   }
 
   .Content4-Product {
