@@ -128,6 +128,59 @@ font-size:18px;
 font-weight: 500;
 color: white;
 }
+.Reitingblock{
+position:relative;
+font-size: 30px;
+display: inline-block;
+&::before{
+content:"★★★★★";
+display: block;
+}
+}
+
+.Reiting-Star{
+position:absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: row-reverse;
+overflow: hidden;
+}
+
+.Radio-star{
+position:absolute;
+width:0%;
+height:0%;
+opacity: 0;
+visibility: hidden;
+top: 0;
+left: 0;
+}
+
+.label-radio{
+flex:0 0 20%;
+height: 100%;
+cursor: pointer;
+color:#bdbdbd;
+&::before{
+content:"★";
+display: block;
+transition:color 0.3s ease 0s;
+}
+}
+
+.Radio-star:checked,
+.Radio-star:checked ~ .label-radio{
+color:#FFCD1E;
+}
+
+.label-radio:hover,
+.label-radio:hover ~ .label-radio,
+.label-radio:checked ~ .label-radio:hover{
+color: yellow;
+}
 
 .Content-blocks-gallery{
 position:relative;
@@ -362,7 +415,7 @@ h6{
 position:relative;
 font-size:26px;
 font-weight: 500;
-margin-bottom:20px;
+margin: 20px 0px;
 }
 p{
 position:relative;
