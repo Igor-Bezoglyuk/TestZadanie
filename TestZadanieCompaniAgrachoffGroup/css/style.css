@@ -572,6 +572,28 @@ input[type=range]::-moz-range-progress {
   box-shadow: none !important;
 }
 
+/*________________________________________________________________________________________________________________________*/
+
+#Content2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+marquee {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background: -o-linear-gradient(350.11deg, #3625AF 0%, #C46BD5 98.82%);
+  background: linear-gradient(99.89deg, #3625AF 0%, #C46BD5 98.82%);
+  -webkit-box-shadow: 0px 1px 10px -1px black;
+  box-shadow: 0px 1px 10px -1px black;
+  padding: 10px 0px;
+}
+
 /*_______________________________________________________________________________________________________________________*/
 
 @media only screen and (max-width: 1399px) {
